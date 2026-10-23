@@ -20,7 +20,7 @@
 
 ## 실행 방법
 ```bash
-cd guestbook
+cd guestbook_week07
 cp .env.example .env          # .env 안의 비밀번호를 내 값으로 수정
 docker compose config --quiet && echo OK
 docker compose up -d --build --scale web=3
