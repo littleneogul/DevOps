@@ -1,0 +1,11 @@
+agents:
+  root:
+    model: dmr/ai/qwen3              # 로컬 모델
+    description: 방명록 compose 도우미
+    instruction: |
+      너는 docker compose 도우미다. 학생의 compose 프로젝트 상태를 확인하고
+      쉬운 한국어로 설명한다. 명령을 실행하기 전에 무엇을 할지 먼저 말한다.
+      컨테이너나 볼륨을 지우는 명령(down -v, rm, volume rm)은 실행하지 않는다.
+    toolsets:
+      - type: shell                  # 터미널 명령 실행
+      - type: think                  # 단계별로 생각하기
