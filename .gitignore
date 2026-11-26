@@ -1,3 +1,4 @@
 week04/backups/
 week04/restore-check/
 .env
+guestbook_week11/k8s/secret.yaml
